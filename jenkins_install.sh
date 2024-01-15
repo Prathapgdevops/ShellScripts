@@ -1,6 +1,9 @@
 #Jenkins requires Java to be installed on the system
 sudo yum install java-1.8.0-openjdk-devel -y
 
+#install wget command
+sudo yum install wget -y
+
 #Jenkins is not included in the default RHEL repositories. Therefore, you need to add the Jenkins repository to the system
 #This will download the Jenkins repository file and save it to the /etc/yum.repos.d directory.
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
